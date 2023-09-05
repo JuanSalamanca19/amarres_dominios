@@ -11,4 +11,5 @@ body {
     rgba(0,0,0,0.5), 
     rgba(0,0,0,0.5)
   ), url(imgs/black_magic_candles_2.jpg) !important;
+  z-index: 0;
 }
