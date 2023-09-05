@@ -13,7 +13,7 @@ export const useServicios = () => {
 
 export function ServicioProvider({children}){
     
-    const [servicios ,  setServicios] = useState([{ titulo: 'Magia negra', img: magianegra },
+    const [servicios ,  setServicios] = useState([{ titulo: 'Magia negra', img: magianegra, des: "Es una práctica mística o esotérica que se utiliza con la intención de causar daño, maleficios o efectos negativos en personas, situaciones o eventos." },
                                                     { titulo: 'Magia roja', href: '#seccion2' },
                                                     { titulo: 'Retorno de pareja', href: '#' },
                                                     { titulo: 'Amarres de amor', href: '#' },

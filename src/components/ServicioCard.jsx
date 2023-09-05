@@ -8,9 +8,13 @@ const ServicioCard = ({servicio, setOpen}) => {
         <div className='bg-zinc-800 max-w-xl w-full p-10 rounded-md'>
            <img className="h-auto w-auto mx-auto" src={servicio.img} alt="" />
             <header className='flex justify-center'>
-                <h1 className='text-2xl font-bold m-5'>{servicio.titulo}</h1>
+                <h1 className='text-2xl font-bold m-5 text-center'>{servicio.titulo}</h1>
             </header>
-            
+            <p className='text-slate-200 text-justify'>
+                {
+                    servicio.des
+                }
+            </p>
             <div className='flex flex-col items-center justify-center'>
                 
                     <button
