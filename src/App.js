@@ -1,3 +1,4 @@
+import { Footers } from "./components/Footers";
 import Navbar from "./components/Navbar";
 import Principal from "./components/Principal";
 import Servicios from "./components/Servicios";
@@ -11,6 +12,7 @@ function App() {
        <ServicioProvider>
           <Servicios/>
        </ServicioProvider>
+       <Footers />
        
     </div>
   );
