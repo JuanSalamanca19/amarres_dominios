@@ -6,22 +6,21 @@ const ServicioCard = ({servicio, setOpen}) => {
 
     return (
         <div className='bg-zinc-800 max-w-xl w-full p-10 rounded-md'>
-           
+           <img className="h-auto w-auto mx-auto" src={servicio.img} alt="" />
             <header className='flex justify-center'>
-                <h1 className='text-xl font-bold'>{servicio.titulo}</h1>
-               
-
+                <h1 className='text-2xl font-bold m-5'>{servicio.titulo}</h1>
             </header>
-            <div className='flex gap-x-2 items-center'>
+            
+            <div className='flex flex-col items-center justify-center'>
                 
                     <button
-                    className='bg-blue-300 py-1 px-4 rounded-md m-0.5'
+                    className='text-blue-500 underline m-5'
                     onClick={() =>{
                         
                         setServicio(servicio);
                         setOpen(true);
                     }}
-                    >ver mas</button>
+                    >Ver más</button>
             </div>
             
         </div>

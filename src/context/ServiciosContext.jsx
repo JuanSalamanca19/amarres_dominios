@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from "react";
-
+import magianegra from "../imgs/magianegra.jpg"
 const ServicioContext = createContext();
 
 export const useServicios = () => {
@@ -13,7 +13,7 @@ export const useServicios = () => {
 
 export function ServicioProvider({children}){
     
-    const [servicios ,  setServicios] = useState([{ titulo: 'Magia negra', href: '#' },
+    const [servicios ,  setServicios] = useState([{ titulo: 'Magia negra', img: magianegra },
                                                     { titulo: 'Magia roja', href: '#seccion2' },
                                                     { titulo: 'Retorno de pareja', href: '#' },
                                                     { titulo: 'Amarres de amor', href: '#' },
